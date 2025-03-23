@@ -1,0 +1,6 @@
+/.public
+.git
+.site
+node_modules
+_site
+tmux-session.bash

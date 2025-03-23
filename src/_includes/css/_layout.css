@@ -1,0 +1,54 @@
+/**
+ * Only layout applicable to all pages. 
+ **/
+
+:root {
+  --page-max-width: 60em;
+  --page-margin: 2em;
+  --min-header-height: 5em;
+  --min-footer-height: 15em;
+}
+
+
+/**
+ * Expand the body to fit the whole viewport 
+ * this effectively grows <main> to fill the screen
+ * and leaves <header> at the top and <footer>
+ * at the bottom 
+ **/
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  min-width: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  min-height: var(--min-header-height);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: calc(100vw - var(--page-margin));
+  width: var(--page-max-width);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: calc(100vw - var(--page-margin));
+  width: var(--page-max-width);
+}
+
+footer {
+  height: var(--min-footer-height);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: calc(100vw - var(--page-margin));
+  width: var(--page-max-width);
+}

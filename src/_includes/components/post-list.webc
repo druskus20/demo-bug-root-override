@@ -1,0 +1,5 @@
+<title1>All Posts</title1>
+
+<p>In this page, however, if you inspect the link bellow you will see a `<link1>` tag, ignoring webc:root="override"</p>
+
+<link1 href="/" @text="`this link does not override properly`"></link1>

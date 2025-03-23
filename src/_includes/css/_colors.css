@@ -1,0 +1,45 @@
+:root {
+  --accent-color: #6f2d90;
+  --hard-font: black;
+  --hard-font-invert: white;
+  --light-font: rgb(75 83 97);
+  --accent-color-var: #FF6161;
+  --accent-color-var: var(--accent-color);
+  --hero-background: #F6F5F0;
+  --page-background: #F6F5F0;
+  --shadow-color: color-mix(in srgb, var(--page-background), #00000020);
+  --border-sharp: #ccc;
+  --code-color: #ffffffaa;
+}
+
+html {
+  color: var(--light-font);
+  background: var(--page-background);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--hard-font);
+  opacity: 0.76;
+}
+
+pre:has(> code) {
+  background-color: var(--code-color) !important;
+}
+
+:not(pre)>code {
+  background-color: var(--code-color);
+}
+
+table {
+  background-color: var(--code-color);
+}
+
+table thead {
+  background-color: color-mix(in srgb, #000000, var(--code-color) 90%);
+}
+
+figure {
+  background-color: var(--code-color);
+}

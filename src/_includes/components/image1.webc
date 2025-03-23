@@ -1,0 +1,8 @@
+<img @attributes>
+
+<style webc:scoped>
+  img {
+    border-radius: 3px;
+    box-shadow: 3px 3px 1px red;
+  }
+</style>

@@ -1,0 +1,24 @@
+/** Defaults **/
+@import "./_normalize.css";
+@import "./_remove-default-styles.css";
+
+@import "./_colors.css";
+@import "./_scrollbar.css";
+@import "./_layout.css";
+@import "./_typography.css";
+
+
+body {
+  /* Stabilize zooming (keep the focus on the page) */
+  scrollbar-gutter: stable;
+  /* Animate auto-scroll */
+  scroll-behavior: smooth;
+
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  /* Handle overflows such as the one on the hero */
+  min-width: fit-content;
+  justify-content: center;
+}

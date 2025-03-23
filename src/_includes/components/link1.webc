@@ -1,0 +1,10 @@
+<a webc:root="override" @attributes>
+
+  <slot></slot>
+</a>
+
+<style webc:scoped>
+  a {
+    border-radius: 2px;
+  }
+</style>

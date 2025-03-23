@@ -1,0 +1,21 @@
+{
+  "name": "druskus.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "eleventy --serve",
+    "build": "rm -rf .site && eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "exports": {
+    "/": "./src"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "v3.0.1-alpha.5",
+    "@11ty/eleventy-plugin-webc": "^0.11",
+    "markdown-it": "^14.1.0"
+  }
+}

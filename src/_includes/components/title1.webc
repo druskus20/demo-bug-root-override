@@ -1,0 +1,17 @@
+<h1 webc:root="override">
+  <slot></slot>
+</h1>
+<style webc:scoped>
+  :host {
+    font-size: 3em;
+    margin: 2em 0 1em 0;
+  }
+</style>
+<script webc:setup>
+//   const posts = collections.posts;
+//   for (const post of posts) {
+//     const postEl = document.createElement('post-item');
+//     postEl.post = post;
+//     this.appendChild(postEl);
+//   }
+</script>
